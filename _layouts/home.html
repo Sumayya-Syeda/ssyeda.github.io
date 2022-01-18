@@ -4,7 +4,7 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h2 class="archive__subtitle">{{ site.data.ui-text[site.locale].about_me | default: "About Me" }}</h3>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
@@ -18,5 +18,11 @@ layout: archive
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div>
+<p class="page__content">
+    {{"Hi! I'm <strong> Sumayya </strong> and I study Electrical and Computer Engineering at Carnegie Mellon University. 
+      I've enjoyed robotics since high school and have found it to be my inspiration for pursuing this field. I hope to continue tinkering with machines and programs into my future."
+    
+    "In my free time I love to read dystopian novels, photograph nature and paint logos of my favorite artists. I also like to crochet when I have the time, so if you'd like a beanie or a stuffed animal let me know!"}}
+</p>
 
 {% include paginator.html %}
